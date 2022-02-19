@@ -3,11 +3,11 @@
  Light #4f5b62 or #e0e0e0
  Neutral #263238 or 
  */
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Space Mono", monospace;
 }
 
@@ -15,26 +15,19 @@ body {
   background: #000a12;
   color: white;
 }
-
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 100px;
   background-image: url("https://www.oxdesigns.co.uk/wp-content/uploads/2021/05/FVxGXU5-scaled.jpg");
   background-size: cover;
 }
-
 .edpic {
   display: block;
   width: 40%;
   margin: 0 auto;
-  -webkit-animation: 4s fade ease-in forwards;
-          animation: 4s fade ease-in forwards;
+  animation: 4s fade ease-in forwards;
 }
-
 .whole-contain {
   margin: 0 auto;
 }
@@ -58,7 +51,6 @@ body {
   margin: 0 auto;
   padding: 50px;
 }
-
 #about-section ul {
   padding-left: 50px;
 }
@@ -69,11 +61,8 @@ body {
   border-top: 1px solid white;
   margin: 0 auto;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
 }
@@ -86,21 +75,17 @@ body {
   border-bottom: 5px black solid;
   padding: 15px 0 15px;
 }
-
 #work-section h1 {
-  -webkit-box-shadow: 5px 4px 23px -4px #000000;
-          box-shadow: 5px 4px 23px -4px #000000;
+  box-shadow: 5px 4px 23px -4px #000000;
   padding: 15px;
   color: white;
-  -webkit-animation: 0.5s colorSwitch ease-in-out infinite;
-          animation: 0.5s colorSwitch ease-in-out infinite;
+  animation: 0.5s colorSwitch ease-in-out infinite;
 }
 
 #work-section h1:hover {
-  -webkit-box-shadow: 5px 4px 23px -4px #000000;
-          box-shadow: 5px 4px 23px -4px #000000;
+  box-shadow: 5px 4px 23px -4px #000000;
   padding: 15px;
-  color: #0bffff;
+  color: rgb(11, 255, 255);
   background: black;
 }
 
@@ -108,22 +93,17 @@ body {
   font-size: 1.5em;
   margin: 50px;
 }
-
 .work-images img {
   width: 35%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 55px;
-  -webkit-box-shadow: 5px 4px 23px -4px #000000;
-          box-shadow: 5px 4px 23px -4px #000000;
+  box-shadow: 5px 4px 23px -4px #000000;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
-
 a:visited {
   text-decoration: none;
 }
@@ -131,30 +111,17 @@ a:visited {
 a:hover {
   cursor: pointer;
 }
-
 /* TYPEWRITER */
 .typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 @keyframes typing {
   from {
     width: 0;
@@ -165,38 +132,19 @@ a:hover {
 }
 
 /* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #dbdbdb;
-  }
-}
 @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: #dbdbdb;
+    border-color: rgb(219, 219, 219);
   }
 }
 
 .text-fade {
   opacity: 0;
-  -webkit-animation: 4s fade ease-in forwards;
-          animation: 4s fade ease-in forwards;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
+  animation: 4s fade ease-in forwards;
 }
 
 @keyframes fade {
@@ -209,43 +157,47 @@ a:hover {
 }
 
 .logo a:hover {
-  color: #49ccc5;
+  color: rgb(73, 204, 197);
 }
-
 /* NAVIGATION */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   min-height: 8vh;
+
   font-weight: bold;
   z-index: 5;
 }
 
 nav:before {
   content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;
+  -webkit-background-size: 400%;
   background-size: 400%;
   z-index: -1;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  animation: animate 10s linear infinite;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -263,25 +215,21 @@ nav:after {
   left: 0;
   top: 0;
 }
-
 .nav-links a:hover {
   background-color: white;
   color: black;
 }
 
 .logo {
-  color: #e2e2e2;
+  color: rgb(226, 226, 226);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
 }
 
 .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 30%;
 }
 
@@ -290,7 +238,7 @@ nav:after {
 }
 
 .nav-links a {
-  color: #e2e2e2;
+  color: rgb(226, 226, 226);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -304,9 +252,8 @@ nav:after {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #e2e2e2;
+  background-color: rgb(226, 226, 226);
   margin: 5px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -315,44 +262,33 @@ nav:after {
     width: 60%;
   }
 }
-
 .work-images img {
   width: 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-links {
     position: fixed;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
+    transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
+
   .nav-links li {
     opacity: 0;
   }
+
   .burger {
     display: block;
     cursor: pointer;
@@ -360,8 +296,7 @@ nav:after {
 }
 
 .nav-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   z-index: 5;
   background: grey;
 }
@@ -370,35 +305,19 @@ nav:after {
   width: 70%;
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -406,11 +325,11 @@ nav:after {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* END OF NAVIGATION */
+
 #contact {
   background-image: url("https://www.oxdesigns.co.uk/wp-content/uploads/2021/05/contactinfo-scaled-e1621596254693.jpg");
   padding-left: 100px;
@@ -444,4 +363,3 @@ textarea {
 #footer p {
   margin: 50px;
 }
-/*# sourceMappingURL=style.css.map */

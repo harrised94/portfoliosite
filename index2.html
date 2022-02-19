@@ -1,0 +1,192 @@
+<!-- THIS COMPONENT IS FOR ALTERNATING SECTIONS OF CONTENT -->
+<!-- USES GSAP AND GSAP SCROLLTRIGGER TO ANIMATE ON SCROLL-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+        section {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .dark, .dark2 {
+            text-align: left;
+            background: rgb(27,27,27);
+            color: white;
+            position: relative;
+        }
+        .light, .light2 {
+            text-align: right;
+            background: rgb(174, 219, 255);
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+
+        .img-right, .img-right2 {
+            width: 50%;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+            object-fit: cover;
+        }
+        .img-left, .img-left2 {
+            width: 50%;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+
+        .content-right, .content-left, .content-right2, .content-left2 {
+            padding: 9em 5em;
+            z-index: 1;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 5em;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 1.6em;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Scroll Down</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+       
+    </section>
+    <section class="dark">
+        <div class="content-left">
+            <h2>Are you really sick?</h2>
+            <p>Go get yo' sick *ss tested, you might have COVID!</p>
+        </div>
+        <img class="img-right" src="https://labblog.uofmhealth.org/sites/lab/files/2020-12/group_of_experts_in_white_PPE.jpg" alt="">
+    </section>
+    <section class="light">
+        <img class="img-left" src="https://labblog.uofmhealth.org/sites/lab/files/2020-12/group_of_experts_in_white_PPE.jpg" alt="">
+        <div class="content-right">
+            <h2>Are you really sick?</h2>
+            <p>Go get yo' sick *ss tested, you might have COVID!</p>
+        </div>
+        
+    </section>
+    <section class="dark2">
+        <div class="content-left2">
+            <h2>Are you really sick?</h2>
+            <p>Go get yo' sick *ss tested, you might have COVID!</p>
+        </div>
+        <img class="img-right2" src="https://labblog.uofmhealth.org/sites/lab/files/2020-12/group_of_experts_in_white_PPE.jpg" alt="">
+    </section>
+    <section class="light2">
+        <img class="img-left2" src="https://labblog.uofmhealth.org/sites/lab/files/2020-12/group_of_experts_in_white_PPE.jpg" alt="">
+        <div class="content-right2">
+            <h2>Are you really sick?</h2>
+            <p>Go get yo' sick *ss tested, you might have COVID!</p>
+        </div>
+        
+    </section>
+
+    <section>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eaque in natus quidem architecto sed quos non odit, necessitatibus asperiores quisquam magnam. Debitis, voluptate voluptatum enim suscipit quo libero neque.</p><br>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        //Set the section we want to target. Must set trigger to the element
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.dark',
+                start: "top bottom",
+                scrub: true,   
+            }
+        });
+        // Set the trigger properties by targetting the elements of the section
+        tl.from(".img-right", { x: 200, opacity: 0.5, duration: 1,})
+            .from(".content-left", {y: 300, opacity: 0, duration: 0.5}, "-=1");
+
+                 //Set the section we want to target. Must set trigger to the element
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.light',
+                start: "top bottom",
+               scrub: true,
+            }
+        });
+        // Set the trigger properties by targetting the elements of the section
+        tl2.from(".img-left", {x: -200, opacity: 0, duration: 1})
+            tl2.from(".content-right", {y: -300, opacity: 0, duration: 0.5}, "-=1");
+        
+        //Set the section we want to target. Must set trigger to the element
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.dark2',
+                start: "top bottom",
+                scrub: true,
+            }
+        });
+        // Set the trigger properties by targetting the elements of the section
+        tl3.from(".img-right2", { x: 200, opacity: 0.5, duration: 1})
+            .from(".content-left2", {y: 300, opacity: 0, duration: 0.5}, "-=1");
+
+                 //Set the section we want to target. Must set trigger to the element
+        let tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.light2',
+                start: "top center",
+               scrub: true,
+            }
+        });
+        // Set the trigger properties by targetting the elements of the section
+        tl4.from(".img-left2", {x: -200, opacity: 0, duration: 1})
+            tl4.from(".content-right2", {y: -300, opacity: 0, duration: 0.5}, "-=1");
+        
+
+    </script>
+</body>
+</html>
